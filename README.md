@@ -45,40 +45,40 @@ Execute preprocessing scripts to clean and structure data:
 
 - Perform analyses like yearly trends, crime type distribution, and life expectancy statistics.
 - Visualize data trends using matplotlib plots.
-- Database Configuration
-- Update the database paths in the code to reflect the actual paths:
 
-python
-Copy code
-# MongoDB URI
+# Database Configuration
+## Update the database paths in the code to reflect the actual paths:
+
+python Copy code
+
+MongoDB URI
 MONGO_URI = "mongodb://localhost:27017"
-# SQLite Database Path
+
+SQLite Database Path
 DB_PATH = "C:/path/to/PublicHealthCrimeData.db"
-File Paths
-Replace placeholders with your actual directory paths for CSV storage and other outputs:
 
-python
-Copy code
-# Directory to store CSV files
+## File Paths
+## Replace placeholders with your actual directory paths for CSV storage and other outputs:
+
+python Copy code
+
+Directory to store CSV files
 CSV_DIR = "C:/path/to/csv_files"
-Execution
-Run the scripts in order:
 
-Data acquisition script: Downloads data and loads it into MongoDB.
-Transformation script: Converts data from MongoDB to SQLite.
-Preprocessing script: Cleans and structures datasets.
-Analysis and visualization script: Generates insights and plots.
-Example:
+# Execution
+Run the scripts in order, in jupyter noteboke:
 
-bash
-Copy code
-python data_acquisition.py
-python data_transformation.py
-python data_preprocessing.py
-python data_analysis_and_visualization.py
-Results
-Extracted datasets saved in MongoDB and SQLite.
-Cleaned datasets stored as CSV files.
-Visual insights from trends, distributions, and correlations.
-License
+- Data acquisition script: Downloads data and loads it into MongoDB.
+- Transformation script: Converts data from MongoDB to SQLite.
+- Preprocessing script: Cleans and structures datasets.
+- Analysis and visualization script: Generates insights and plots.
+
+
+
+# Results
+- Extracted datasets saved in MongoDB and SQLite.
+- Cleaned datasets stored as CSV files.
+- Visual insights from trends, distributions, and correlations.
+
+# License
 This repository is licensed under the MIT License.
