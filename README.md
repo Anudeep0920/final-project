@@ -68,6 +68,7 @@ CSV_DIR = "C:/path/to/csv_files"
 # Execution
 Run the scripts in order, in jupyter noteboke:
 
+- library importationn cell
 - Data acquisition script: Downloads data and loads it into MongoDB.
 - Transformation script: Converts data from MongoDB to SQLite.
 - Preprocessing script: Cleans and structures datasets.
